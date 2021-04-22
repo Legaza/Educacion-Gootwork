@@ -1,19 +1,35 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { CarruselTalleresComponent } from './04-carrusel-talleres/carrusel-talleres.component';
+import { CursosComponent } from './01-cursos/cursos.component';
+import { EducadoresComponent } from './02-educadores/educadores.component';
+import { NivelesEducativosComponent } from './03-niveles-educativos/niveles-educativos.component';
+import { ContactosComponent } from './05-contactos/contactos.component';
 
 
 
 @NgModule({
   declarations: [
-    CarruselTalleresComponent
+    CarruselTalleresComponent,
+    CursosComponent,
+    EducadoresComponent,
+    NivelesEducativosComponent,
+    ContactosComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    NgbModule
   ],
   exports:[
-    CarruselTalleresComponent
+    CursosComponent,
+    EducadoresComponent,
+    NivelesEducativosComponent,
+    CarruselTalleresComponent,
+    ContactosComponent
+
   ]
 })
 export class MainPageModule { }
