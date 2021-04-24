@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 import { CarruselTalleresComponent } from './04-carrusel-talleres/carrusel-talleres.component';
 import { CursosComponent } from './01-cursos/cursos.component';
@@ -17,11 +18,12 @@ import { ContactosComponent } from './05-contactos/contactos.component';
     CursosComponent,
     EducadoresComponent,
     NivelesEducativosComponent,
-    ContactosComponent
+    ContactosComponent,
   ],
   imports: [
     CommonModule,
-    NgbModule
+    NgbModule,
+    CarouselModule
   ],
   exports:[
     CursosComponent,
