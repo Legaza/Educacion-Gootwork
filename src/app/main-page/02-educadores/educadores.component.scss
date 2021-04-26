@@ -1,6 +1,82 @@
 .contenedor{
     height: 100vh;
     width: 100%;
-
     background-color: rgba($color: #A7DBD8, $alpha: 1.0);
+}
+@media screen and (min-width:740px) {
+    .carta-educadores{
+        margin-right: 150px;
+        margin-left: 150px;
+    }
+    
+}
+
+// @media screen and (min-width:410px) {
+//     .carta-educadores{
+//         margin-right: 50px;
+//         margin-left: 50px;
+//     }
+//     .box-educadores{
+//         .etiqueta-educadores{
+//             width: 5.6vh;
+//             height: 5.6vh;
+    
+//             position: absolute;
+//             margin-top: 300px;
+//             margin-left: 20px;
+//         }
+//     }
+    
+// }
+
+
+.nombre-educadores{
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 65px;
+    line-height: 82px;
+    text-align: center;
+
+    color: #000000;
+
+}
+.box-educadores{
+    height: 48vh;
+    
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+    .model-educadores{
+        max-height: 100%;
+        max-width: 100%;
+        margin: 10px;
+        border-radius: 20px;
+
+        border: 8px solid #c4c4c4;
+    }
+    .etiqueta-educadores{
+        width: 5.6vh;
+        height: 5.6vh;
+
+        position: absolute;
+        margin-top: 395px;
+        margin-left: 20px;
+    }
+}
+
+.descripcion-educadores{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    text-align:justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+
+    color: #000000;
 }
