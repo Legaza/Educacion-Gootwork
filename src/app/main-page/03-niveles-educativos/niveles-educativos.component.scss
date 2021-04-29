@@ -1,6 +1,244 @@
 .contenedor{
     height: 100vh;
     width: 100%;
-
     background-color: rgba($color: #F8F8F8, $alpha: 1.0);
 }
+
+.cuadricula{
+    position: absolute;
+    padding-left: 10%;
+    padding-top: 10%;
+    width: 90%;
+    height: 80vh;
+    background-image: url(../../../assets/icon/cuadricula.svg);
+    background-size: 123px, 120px;
+    border: 5px solid #A7DBD8;
+    filter: drop-shadow(0px 4px 4px rgba($color: #000000, $alpha: 0.4));
+}
+
+.carta-niveles{
+    height: 600px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: transparent;
+
+    .box-fondo-niveles{
+        width: 340px;
+        height: 585px;
+        background-color: #ffffff;
+        border: 2px solid #000000;
+    }
+
+    .box-niveles-inicial{
+        position: absolute;
+        width: 340px;
+        height: 585px;
+        background-color: #3b8683;
+        border: 2px solid #000000;
+        margin-top: 16px;
+        margin-left: 20px;
+        text-align: center;
+
+        .model-niveles{
+            height: 150px;
+            width: 150px;
+            padding-top: 100px;
+        }
+
+        .nombre-niveles{
+            margin-top: 30px;
+            font-family: Merriweather;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 65px;
+            line-height: 82px;
+            text-align: center;
+
+            color: #FFFFFF;
+        }
+
+        .descripcion-niveles{
+            margin-top: 30px;
+            margin-left: 75px;
+            margin-right: 75px;
+            font-family: Source Sans Pro;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 25px;
+            text-align: center;
+        
+            color: #FFFFFF;
+        
+        }
+
+        .btn-inicial {
+            background-color: #79BD9A;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            border: 2px solid #FFFFFF;
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: Merriweather;
+        }
+    }
+}
+
+
+.carta-niveles{
+    height: 600px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: transparent;
+
+    .box-fondo-niveles{
+        width: 340px;
+        height: 585px;
+        background-color: #ffffff;
+        border: 2px solid #000000;
+    }
+
+    .box-niveles-primaria{
+        position: absolute;
+        width: 340px;
+        height: 585px;
+        background-color: #FA6900;
+        border: 2px solid #000000;
+        margin-top: 16px;
+        margin-left: 20px;
+        text-align: center;
+
+        .model-niveles{
+            height: 150px;
+            width: 150px;
+            padding-top: 100px;
+        }
+
+        .nombre-niveles{
+            margin-top: 30px;
+            font-family: Merriweather;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 65px;
+            line-height: 82px;
+            text-align: center;
+
+            color: #FFFFFF;
+        }
+
+        .descripcion-niveles{
+            margin-top: 30px;
+            margin-left: 75px;
+            margin-right: 75px;
+            font-family: Source Sans Pro;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 25px;
+            text-align: center;
+        
+            color: #FFFFFF;
+        
+        }
+
+        .btn-primaria {
+            background-color: #F38630;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            border: 2px solid #FFFFFF;
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: Merriweather;
+        }
+    }
+}
+
+
+.carta-niveles{
+    height: 600px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: transparent;
+
+    .box-fondo-niveles{
+        width: 340px;
+        height: 585px;
+        background-color: #ffffff;
+        border: 2px solid #000000;
+    }
+
+    .box-niveles-secundaria {
+        position: absolute;
+        width: 340px;
+        height: 585px;
+        background-color: #B45DD3;
+        border: 2px solid #000000;
+        margin-top: 16px;
+        margin-left: 20px;
+        text-align: center;
+
+        .model-niveles{
+            height: 150px;
+            width: 150px;
+            padding-top: 100px;
+        }
+
+        .nombre-niveles{
+            margin-top: 30px;
+            font-family: Merriweather;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 65px;
+            line-height: 82px;
+            text-align: center;
+
+            color: #FFFFFF;
+        }
+
+        .descripcion-niveles{
+            margin-top: 30px;
+            margin-left: 75px;
+            margin-right: 75px;
+            font-family: Source Sans Pro;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 25px;
+            text-align: center;
+        
+            color: #FFFFFF;
+        
+        }
+
+        .btn-secundaria {
+            background-color: #C481DC;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            border: 2px solid #FFFFFF;
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: Merriweather;
+        }
+    }
+}
+
+
+

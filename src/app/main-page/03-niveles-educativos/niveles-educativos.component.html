@@ -1,3 +1,52 @@
 <div class="contenedor">
-    
+    <div class="cuadricula"></div>
+    <div class="contenedor-carousel">
+        <owl-carousel-o [options]="customOptions">
+
+            <ng-template carouselSlide>
+                <div class="carta-niveles">
+                    <div class="box-fondo-niveles"></div>
+                    <div class="box-niveles-inicial">
+                        <img src="../../../assets/img/03-niveles/inicialIco1.png" class="model-niveles">
+                        <p class="nombre-niveles">Inicial</p>
+                        <p class="descripcion-niveles">Lorem ipsum dolor sit amet consectetur adipiscing elit nullam lobortis, quisque consequat ultricies dis molestie sociis </p>
+                        <button class="btn-inicial">
+                            <span class="text">Ver mas...</span>
+                        </button>
+                    </div>
+                </div>
+            </ng-template>
+
+            <ng-template carouselSlide>
+                <div class="carta-niveles">
+                    <div class="box-fondo-niveles">
+                        <div class="box-niveles-primaria">
+                            <img src="../../../assets/img/03-niveles/primariaIco1.png" class="model-niveles">
+                            <p class="nombre-niveles">Inicial</p>
+                            <p class="descripcion-niveles">Lorem ipsum dolor sit amet consectetur adipiscing elit nullam lobortis, quisque consequat ultricies dis molestie sociis </p>
+                            <button class="btn-primaria">
+                                <span class="text">Ver mas...</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+
+            <ng-template carouselSlide>
+                <div class="carta-niveles">
+                    <div class="box-fondo-niveles">
+                        <div class="box-niveles-secundaria">
+                            <img src="../../../assets/img/03-niveles/secundariaIco1.png" class="model-niveles">
+                            <p class="nombre-niveles">Inicial</p>
+                            <p class="descripcion-niveles">Lorem ipsum dolor sit amet consectetur adipiscing elit nullam lobortis, quisque consequat ultricies dis molestie sociis </p>
+                            <button class="btn-secundaria">
+                                <span class="text">Ver mas...</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+
+        </owl-carousel-o>
+    </div>
 </div>
