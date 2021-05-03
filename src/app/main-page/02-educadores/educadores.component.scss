@@ -2,34 +2,14 @@
     height: 100vh;
     width: 100%;
     background-color: rgba($color: #A7DBD8, $alpha: 1.0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-@media screen and (min-width:740px) {
-    .carta-educadores{
-        margin-right: 150px;
-        margin-left: 150px;
-    }
-    
+.carta-educadores{
+    padding-left: 16%;
+    padding-right: 16%;
 }
-
-// @media screen and (min-width:410px) {
-//     .carta-educadores{
-//         margin-right: 50px;
-//         margin-left: 50px;
-//     }
-//     .box-educadores{
-//         .etiqueta-educadores{
-//             width: 5.6vh;
-//             height: 5.6vh;
-    
-//             position: absolute;
-//             margin-top: 300px;
-//             margin-left: 20px;
-//         }
-//     }
-    
-// }
-
-
 .nombre-educadores{
     font-family: Merriweather;
     font-style: normal;
