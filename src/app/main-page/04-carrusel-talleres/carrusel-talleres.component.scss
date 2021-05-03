@@ -2,13 +2,14 @@
     height: 100vh;
     width: 100%;
     background-image: linear-gradient(180deg, #F8F8F8 50%, #F38630 50%);
-    justify-content: center;
+    display: flex;
     align-items: center;
     
 }
 .contenedor-carrusel{
     background-color: transparent;
-    display: block;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 .contenedor-slide{
     margin-right: 25px;
