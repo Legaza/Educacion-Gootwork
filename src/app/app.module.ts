@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainPageModule } from './main-page/main-page.module';
@@ -18,7 +20,8 @@ import { MainPageModule } from './main-page/main-page.module';
     MainPageModule,
     NgbModule,
     NgbPaginationModule, 
-    NgbAlertModule
+    NgbAlertModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
