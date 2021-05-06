@@ -27,9 +27,19 @@
    </header>
 </div>
 
-<ng-template #name>
+<ng-template #name let-modal>
     <div class="modal-header">
         <h4 class="modal-title">Titulo modal</h4>
-        <button class="close" aria-label="close" type="button" (click)="modal.dismissAll()"></button>
+        <button class="close" aria-label="close" type="button" (click)="modal.dismissAll()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        Este es el contenido del modal
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-success" (click)="modal.close">Ok!</button>
     </div>
 </ng-template>
+
+<!--<button type="button" class="btn btn-outline-danger" (click)="modal.open(name)">Lanzar modal</button>-->
