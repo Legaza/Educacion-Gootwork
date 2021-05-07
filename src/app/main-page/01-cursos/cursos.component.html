@@ -35,9 +35,12 @@
       </button>
     </div> -->
     <div class="modal-body">
-      <p>Hello, World!</p>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Save</button>
+      <div class="cabecera-modal">
+        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="circulo-modal"></div>
+      <div class="pie-modal"></div>
     </div>
 </ng-template>
