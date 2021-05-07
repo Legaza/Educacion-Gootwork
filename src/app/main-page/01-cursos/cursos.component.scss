@@ -223,12 +223,14 @@ nav{
 
         margin-top: 40px;
         margin-left: 22%;
-        padding-left: 10px;
+        padding-left: 16px;
         padding-right: 10px;
 
         background: #FFFFFF;
         border: 5px solid #3B8686;
         border-radius: 30px;
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900;
     }
     .txt-contra{
         width: 450px;
@@ -237,12 +239,14 @@ nav{
 
         margin-top: 25px;
         margin-left: 22%;
-        padding-left: 10px;
+        padding-left: 16px;
         padding-right: 10px;
 
         background: #FFFFFF;
         border: 5px solid #3B8686;
         border-radius: 30px;
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900;
     }
     .checkbox-modal{
         margin-top: 1vh;
@@ -252,5 +256,29 @@ nav{
     .olvidado{
         margin-left: 10%;
         color: #FFFFFF;
+    }
+
+    .boton-login{
+        font-family: Merriweather;
+        font-style: normal;
+
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
+        font-weight: 300;
+        text-decoration: none;
+
+        background-color: #79BD9A;
+        border-radius: 30px;
+        border: 0px;
+
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-left: 30%;
+        margin-top: 5vh;
+    }
+
+    .registro{
+        text-align: center;
+        margin-top: 3vh;
     }
 }
