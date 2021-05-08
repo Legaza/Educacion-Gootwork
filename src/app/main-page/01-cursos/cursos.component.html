@@ -1,30 +1,28 @@
 <div class="contenedor">
-   <header>
-       <span>
-           <img src="../../../assets/img/01-cabecera/policiasLogo3.png" alt="">
-           <p>Sumaq<br>Yachay</p>
+  <header>
+    <span>
+      <img src="../../../assets/img/01-cabecera/policiasLogo3.png" alt="">
+      <p>Sumaq<br>Yachay</p>
            
-           <input type="checkbox" class="menu-btn" id="menu-btn">
-           <label for="menu-btn" class="menu-icon">
-               <span class="menu-icon__line"></span>
-           </label>
+      <input type="checkbox" class="menu-btn" id="menu-btn">
+      <label for="menu-btn" class="menu-icon">
+        <span class="menu-icon__line"></span>
+      </label>
+    </span>
+    <nav>
+      <ul>
+        <li><a href="#" class="link">Inicio</a></li>
 
+        <li><a href="#" class="link">Acerca de</a></li>
 
-       </span>
-       <nav>
-           <ul>
-               <li><a href="#" class="link">Inicio</a></li>
+        <li><a href="#" class="link">Contactos</a></li>
 
-               <li><a href="#" class="link">Acerca de</a></li>
+        <li><a href="#" class="link">Cursos</a></li>
 
-               <li><a href="#" class="link">Contactos</a></li>
-
-               <li><a href="#" class="link">Cursos</a></li>
-
-               <li><button type="button" class="boton" (click)="open(content)">Ingresar</button></li>
-           </ul>
-       </nav>
-   </header>
+        <li><button type="button" class="boton" (click)="open(content)">Ingresar</button></li>
+      </ul>
+    </nav>
+  </header>
 </div>
 
 <ng-template #content let-c="close" let-d="dismiss">
@@ -43,10 +41,20 @@
       <div class="circulo-modal"></div>
       <div class="pie-modal">
         <p class="titulo-modal">Inicio de sesion</p>
-        <form action="#">
-          <input type="text" class="txt-usuario" placeholder="&nbsp; &nbsp; Username &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ">
-          <input type="password" class="txt-contra" placeholder="&nbsp; &nbsp; Password &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ">
-          <div>
+        <form action="#" class="form-content">
+          <div class="group-icon">
+            <input type="text" class="form-input" placeholder="&nbsp; &nbsp; Username ">
+            <span class="form-icon">
+              <i class="far fa-user"></i>
+            </span>
+          </div>
+          <div class="group-icon">
+            <input type="password" class="form-input" placeholder="&nbsp; &nbsp; Password ">
+            <span class="form-icon">
+              <i class="fas fa-lock"></i>
+            </span>
+          </div>
+        <div>
             <input type="checkbox" class="checkbox-modal"  id="#">
             <label for="#" class="texto-checkbox">
                <p style="color: white;">No  olvidar contraseña</p>
