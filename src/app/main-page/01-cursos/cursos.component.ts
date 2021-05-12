@@ -18,6 +18,9 @@ export class CursosComponent implements OnInit {
   open(content: any) {
     this.modalService.open(content,{size: 'lg', centered: true});
   }
+  open2(record: any) {
+    this.modalService.open(record,{size: 'xl', centered: true});
+  }
 
   ngOnInit(): void {
   }

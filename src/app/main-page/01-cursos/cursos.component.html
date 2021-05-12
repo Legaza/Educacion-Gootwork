@@ -25,13 +25,14 @@
   </header>
 </div>
 
+<!--//////////////////////////////////Modal de login//////////////////////////////////////////-->
 <ng-template #content let-c="close" let-d="dismiss">
   <div class="modal-body">
 
     <div class="cabecera-modal">
       <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
           <span aria-hidden="true">&times;</span>
-        </button>
+      </button>
     </div>
 
     <div class="circulo-modal"></div>
@@ -61,14 +62,152 @@
           <label for="#" class="texto-checkbox">
              <p style="color: white;" class="noolvido">No  olvidar contraseña</p>
           </label>
-          <a href="#" class="olvidado">¿Olvidaste tu contraseña?</a>
+          <a href="#" class="olvidado" >¿Olvidaste tu contraseña?</a>
         </div>
 
         <button type="button" class="boton-login">Ingresar</button>
-        <p style="color: white;" class="registro">Aun no te haz registrado? <a href="#" style="color: white;">Registrate aqui...</a></p>
+        <p style="color: white;" class="registro">
+          Aun no te haz registrado? 
+          <button class="record" (click)="open2(record)">
+            <a href="#" style="color: white;" >Registrate aqui...</a>
+          </button>
+        </p>
         
       </form>
     </div>
+
+  </div>
+</ng-template>
+
+<!--//////////////////////////////Modal de registro//////////////////////////////////////////-->
+
+<ng-template #record let-c="close" let-d="dismiss">
+  <div class="modal-body">
+
+    <div class="cabecera-record">
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+          <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <div class="pie-record">
+
+      <form action="" class="form-record">
+
+        <div class="informacion-personal">
+
+          <p class="titulo-personal">Informacion personal</p>
+
+          <div class="row">
+            <div class="col columna-nombre">
+              <p class="nombre-personal">Nombre Completo </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-6 columna-input">
+              <input type="text" class="input-nombre" placeholder="&nbsp; &nbsp; Nombres ">
+            </div>
+            <div class="col-12 col-md-6 columna-input">
+              <input type="text" class="input-nombre" placeholder="&nbsp; &nbsp; Apellidos ">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-6 columna-input">
+              <p class="nombre-personal">DNI </p>
+              <input type="text" class="input-nombre" placeholder="&nbsp; &nbsp; DNI ">
+            </div>
+            <div class="col-12 col-md-6 columna-input">
+              <p class="nombre-personal">Nacimiento </p>
+              <input type="date" class="input-nombre" placeholder="&nbsp; &nbsp; " min="1950-01-01">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="informacion-escolar">
+          <p class="titulo-personal">Informacion escolar</p>
+
+          <div class="row">
+            <div class="col-12 col-md-6 columna-input">
+              <p class="nombre-personal">Institucion educativa </p>
+              <input type="text" class="input-nombre" placeholder="&nbsp; &nbsp; Institucion educativa">
+            </div>
+            <div class="col-12 col-md-6 columna-input">
+              <p class="nombre-personal">Nombre de institucion </p>
+              <input type="text" class="input-nombre" placeholder="&nbsp; &nbsp; Nombre de la institucion">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-6 columna-input">
+              <p class="nombre-personal">Instruccion </p>
+              <select  class="input-nombre selector" >
+                <option value="Inicial">Inicial</option>
+                <option value="Primaria">Primaria</option>
+                <option value="Secundaria">Secundaria</option>
+                <option value="General">Publico general</option>
+              </select>
+            </div>
+            <div class="col-12 col-md-6 columna-input">
+              <p class="nombre-personal">Grado </p>
+              <select  class="input-nombre selector" >
+                <option value="Inicial">Inicial</option>
+                <option value="Primaria">Primaria</option>
+                <option value="Secundaria">Secundaria</option>
+                <option value="General">Publico general</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="Informacion-correo">
+          <p class="titulo-personal">Informacion escolar</p>
+
+          <div class="row">
+            <div class="col-12 col-md-6 columna-input">
+              <p class="nombre-personal">E-mail </p>
+              <input type="text" class="input-nombre" placeholder="&nbsp; &nbsp; E-mail">
+            </div>
+            <div class="col-12 col-md-6 columna-input">
+              <p class="nombre-personal">Telefono celular </p>
+              <input type="text" class="input-nombre" placeholder="&nbsp; &nbsp; Telefono celular">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-6 columna-input">
+              <p class="nombre-personal">Contraseña </p>
+              <input type="text" class="input-nombre" placeholder="&nbsp; &nbsp; contraseña">
+            </div>
+            <div class="col-12 col-md-6 columna-input">
+              <p class="nombre-personal">Confirma contraseña </p>
+              <input type="text" class="input-nombre" placeholder="&nbsp; &nbsp; confirma contraseña">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="carta-compromiso">
+          <p class="titulo-personal">Carta compromiso</p>
+          <p class="nombre-personal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+             velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+             velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+            sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        </div>
+        
+      </form>
+
+    </div>
+
 
   </div>
 </ng-template>
