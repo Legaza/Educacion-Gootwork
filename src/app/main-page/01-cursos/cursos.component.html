@@ -68,7 +68,7 @@
         <button type="button" class="boton-login">Ingresar</button>
         <p style="color: white;" class="registro">
           Aun no te haz registrado? 
-          <button class="record" (click)="open2(record)">
+          <button class="record" (click)="open2(record)" (click)="d('Cross click')">
             <a href="#" style="color: white;" >Registrate aqui...</a>
           </button>
         </p>
@@ -88,13 +88,57 @@
       <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
           <span aria-hidden="true">&times;</span>
       </button>
+
+      <div class=" container barra-carga">
+        <div class="row">
+          <div class="col">
+            <button class="circulo-obscuro" *ngIf="step > 0" (click)="selectpasos(1)"></button>
+          </div>
+          <div class="col linea">
+            <div class="linea-claro" *ngIf="step < 2"></div>
+            <div class="linea-obscuro" *ngIf="step > 1"></div>
+          </div>
+
+          <div class="col ">
+            <button class="circulo-claro" *ngIf="step < 2" (click)="selectpasos(2)"></button>
+            <button class="circulo-obscuro" *ngIf="step > 1" (click)="selectpasos(2)"></button>
+          </div>
+          <div class="col linea">
+            <div class="linea-claro" *ngIf="step < 3"></div>
+            <div class="linea-obscuro" *ngIf="step > 2"></div>
+          </div>
+
+          <div class="col">
+            <button class="circulo-claro " *ngIf="step < 3" (click)="selectpasos(3)"></button>
+            <button class="circulo-obscuro" *ngIf="step > 2" (click)="selectpasos(3)"></button>
+          </div>
+          <div class="col linea">
+            <div class="linea-claro" *ngIf="step < 4"></div>
+            <div class="linea-obscuro" *ngIf="step > 3"></div>
+          </div>
+
+          <div class="col">
+            <button class="circulo-claro" *ngIf="step < 4" (click)="selectpasos(4)"></button>
+            <button class="circulo-obscuro"*ngIf="step > 3" (click)="selectpasos(4)"></button>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="contenedor-frase">
+        <p class="frase" *ngIf="step == 1">La mejor forma de predecir el futuro es crearlo.</p>
+        <p class="frase" *ngIf="step == 2">Ten paciencia, todos aprendemos a nuestro propio ritmo.</p>
+        <p class="frase" *ngIf="step == 3">Nunca se ha logrado nada sin entusiasmo.</p>
+        <p class="frase" *ngIf="step == 4">El éxito es la suma de pequeños esfuerzo repetidos día tras día.</p>
+      </div>
+
     </div>
 
     <div class="pie-record">
 
       <form action="" class="form-record">
 
-        <div class="informacion-personal">
+        <div class="informacion-personal" *ngIf="step == 1">
 
           <p class="titulo-personal">Informacion personal</p>
 
@@ -126,7 +170,7 @@
 
         </div>
 
-        <div class="informacion-escolar">
+        <div class="informacion-escolar" *ngIf="step == 2">
           <p class="titulo-personal">Informacion escolar</p>
 
           <div class="row">
@@ -163,8 +207,8 @@
 
         </div>
 
-        <div class="Informacion-correo">
-          <p class="titulo-personal">Informacion escolar</p>
+        <div class="Informacion-correo" *ngIf="step == 3">
+          <p class="titulo-personal">Correo</p>
 
           <div class="row">
             <div class="col-12 col-md-6 columna-input">
@@ -190,7 +234,7 @@
 
         </div>
 
-        <div class="carta-compromiso">
+        <div class="carta-compromiso" *ngIf="step == 4">
           <p class="titulo-personal">Carta compromiso</p>
           <p class="nombre-personal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
@@ -202,6 +246,25 @@
             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
             sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        </div>
+
+        <div class="seccion-botones">
+          <hr color="#c4c4c4" size="3" width="90%">
+          <div class="row">
+            <div class="col-12 col-md-6 columna-izquierda">
+              <p style="color: white;" class="registro" *ngIf="step == 1">
+                Ya tienes cuenta? 
+                <button class="record" (click)="open(content) " (click)="d('Cross click')">
+                  <a href="#" style="color: white;" >Ingresa aqui...</a>
+                </button>
+              </p>
+              <button type="button" class="boton-login" *ngIf="step > 1" (click)="pasos(-1)">Regresar</button>
+            </div>
+            <div class="col-12 col-md-6 columna-derecha">
+              <button type="button" class="boton-login" *ngIf="step > 0 && step < 4" (click)="pasos(+1)">Siguiente</button>
+              <button type="button" class="boton-login" *ngIf="step == 4">Acepto</button>
+            </div>
+          </div>
         </div>
         
       </form>

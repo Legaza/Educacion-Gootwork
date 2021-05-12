@@ -301,7 +301,6 @@ nav{
 //========================= modal registro ==================================
 
 
-
 .cabecera-record{
     width: 100%;
     height: 169px;
@@ -316,6 +315,68 @@ nav{
         color: #FFFFFF;
         padding-right: 3vh;
         padding-top: 2vh;
+    }
+
+    .barra-carga{
+        display: flex;
+        justify-content: center;
+        .col{
+            flex-grow: 0;
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 0;
+            margin-right: 0;
+
+        }
+        .linea{
+            padding-top: 1vh;
+        }
+        .circulo-claro{
+            height: 2.8vh;
+            width: 2.8vh;
+            background-color: #CFF09E;
+            border-radius: 30px;
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+        .circulo-obscuro{
+            height: 2.8vh;
+            width: 2.8vh;
+            background-color: #8CDA00;
+            border-radius: 30px;
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+        .linea-claro{
+            height: 0px;
+            width: 10vh;
+            border: 3px solid #CFF09E;
+            margin: 0;
+            padding: 0;
+        }
+        .linea-obscuro{
+            height: 0px;
+            width: 10vh;
+            border: 3px solid #8CDA00;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .contenedor-frase{
+        text-align: center;
+        .frase{
+            padding-top: 1vh;
+            font-family: Merriweather;
+            font-weight: bolder ;
+            font-size: 1.8rem;
+
+            
+
+            -webkit-text-stroke: .05rem black;
+            color: #FFFFFF;
+        }
     }
 }
 .pie-record{
@@ -506,6 +567,58 @@ nav{
             line-height: 45px;
 
             color: #FFFFFF;
+        }
+    }
+    .seccion-botones{
+        margin-bottom: 6vh;
+        hr{
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .columna-izquierda{
+            margin-top: 2vh;
+            .registro{
+                padding-top: 1vh;
+                .record{
+                    background-color: transparent;
+                    border: 0;
+                }
+            }
+            .boton-login{
+                font-family: Merriweather;
+                font-style: normal;
+
+                color: rgb(255, 255, 255);
+                font-size: 2rem;
+                font-weight: 300;
+                text-decoration: none;
+
+                background-color: #79BD9A;
+                border-radius: 30px;
+                border: 0px;
+
+                padding-left: 100px;
+                padding-right: 100px;
+            }
+        }
+        .columna-derecha{
+            margin-top: 2vh;
+            .boton-login{
+                font-family: Merriweather;
+                font-style: normal;
+
+                color: rgb(255, 255, 255);
+                font-size: 2rem;
+                font-weight: 300;
+                text-decoration: none;
+
+                background-color: #79BD9A;
+                border-radius: 30px;
+                border: 0px;
+
+                padding-left: 100px;
+                padding-right: 100px;
+            }
         }
     }
 }

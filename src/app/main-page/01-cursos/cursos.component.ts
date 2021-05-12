@@ -9,6 +9,8 @@ import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class CursosComponent implements OnInit {
 
+  step: any = 1;
+
   constructor(config: NgbModalConfig, private modalService: NgbModal) {
     // customize default values of modals used by this component tree
     config.backdrop = 'static';
@@ -20,6 +22,14 @@ export class CursosComponent implements OnInit {
   }
   open2(record: any) {
     this.modalService.open(record,{size: 'xl', centered: true});
+  }
+
+  pasos(numero: any): void{
+    this.step = this.step + numero;
+  }
+
+  selectpasos(numero:any): void{
+    this.step = numero;
   }
 
   ngOnInit(): void {
