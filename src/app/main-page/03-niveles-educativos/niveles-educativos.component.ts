@@ -24,9 +24,9 @@ export class NivelesEducativosComponent implements OnInit {
         items: 1
       },
       740: {
-        items: 3
+        items: 2
       },
-      940: {
+      1300: {
         items: 3
       }
     },

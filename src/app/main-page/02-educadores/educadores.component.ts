@@ -24,10 +24,13 @@ export class EducadoresComponent implements OnInit {
         items: 1
       },
       740: {
-        items: 3
+        items: 2
       },
       940: {
-        items: 3
+        items: 2
+      },
+      1200:{
+        items:3
       }
     },
     nav: false
