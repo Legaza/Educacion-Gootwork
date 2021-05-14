@@ -592,13 +592,12 @@ nav{
                 font-size: 2rem;
                 font-weight: 300;
                 text-decoration: none;
+                min-width: 200px;
 
                 background-color: #79BD9A;
                 border-radius: 30px;
                 border: 0px;
-
-                padding-left: 100px;
-                padding-right: 100px;
+ 
             }
         }
         .columna-derecha{
@@ -616,9 +615,12 @@ nav{
                 border-radius: 30px;
                 border: 0px;
 
-                padding-left: 100px;
-                padding-right: 100px;
             }
         }
     }
+}
+
+.boton-login{
+    min-width: 200px;
+
 }
