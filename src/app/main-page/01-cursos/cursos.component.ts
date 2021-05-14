@@ -10,11 +10,16 @@ import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 export class CursosComponent implements OnInit {
 
   step: any = 1;
+  header: boolean = false;
 
   constructor(config: NgbModalConfig, private modalService: NgbModal) {
     // customize default values of modals used by this component tree
     config.backdrop = 'static';
     config.keyboard = false;
+  }
+
+  openHeader(){
+    this.header=!this.header;
   }
 
   open(content: any) {

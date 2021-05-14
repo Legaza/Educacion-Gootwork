@@ -5,12 +5,12 @@
       <p>Sumaq<br>Yachay</p>
            
       <input type="checkbox" class="menu-btn" id="menu-btn">
-      <label for="menu-btn" class="menu-icon">
+      <label for="menu-btn" class="menu-icon" (click)="openHeader()">
         <span class="menu-icon__line"></span>
       </label>
     </span>
-    <nav>
-      <ul>
+    <nav class="header-menu" [class] = "{'show': header}">
+      <ul class="menu">
         <li><a href="#" class="link">Inicio</a></li>
 
         <li><a href="#" class="link">Acerca de</a></li>
