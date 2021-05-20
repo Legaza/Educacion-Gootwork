@@ -55,6 +55,20 @@
         text-align: center;
         color: white;
     }
+    .menu-btn{
+        position: absolute;
+        display: none;
+    }
+    label{
+        position: absolute;
+        top: 30px;
+        left: 230px;
+        img{
+            fill: white;
+            width: 42px;
+            height: 48px;
+        }
+    }
     .contenedor-botones{
         margin-top: 180px;
         display: flex;
@@ -70,6 +84,7 @@
             width: 262px;
             background-color: #3B8686;
             border-radius: 20px;
+            border: 0;
             
             font-family: Source Sans Pro;
             font-style: normal;
@@ -78,6 +93,13 @@
             line-height: 30px;
             text-align: left;
             color: #c4c4c4;
+            i{
+                padding-left: 10px;
+            }
+        }
+        .activo{
+            background: linear-gradient(90deg, #0B486B 0%, rgba(42, 92, 222, 0.46748) 0%, rgba(46, 96, 223, 0.457786) 9.38%, rgba(11, 72, 107, 0) 42.71%), #479E9E;
+            color: white;
         }
     }
 
