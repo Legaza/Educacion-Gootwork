@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainPageModule } from './main-page/main-page.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,9 @@ import { MainPageModule } from './main-page/main-page.module';
     NgbModule,
     NgbPaginationModule, 
     NgbAlertModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    DashboardModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

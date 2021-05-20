@@ -36,6 +36,9 @@ export class CursosComponent implements OnInit {
   selectpasos(numero:any): void{
     this.step = numero;
   }
+  reinicio(){
+    this.step=1;
+  }
 
   ngOnInit(): void {
   }

@@ -1,31 +1,25 @@
 .contenedor{
     height: 100vh;
     width: 100%;
-
     background-image: url(../../../assets/img/01-cabecera/notebook.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
-
 header{
     width: 100%;
     padding-left: 5%;
     padding-right: 10%;
     padding-top: 1%;
     padding-bottom: 1%;
-
     background-color: rgba($color: #333333, $alpha: 0.6);
     z-index: 1;
-
     top: 0;
     left: 0;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 span{
     display: flex;
     img{
@@ -34,18 +28,15 @@ span{
     p{
         padding-top: 5%;
         padding-left: .5%;
-
         font-family: Merriweather;
         font-style: normal;
         font-weight: normal;
         font-size: 2rem;
         font-weight: 400;
         line-height: 30px;
-
         color: #FFFFFF;
     }
 }
-
 .menu-icon{
     position: absolute;
     padding: 26px 10px;
@@ -54,7 +45,6 @@ span{
     cursor: pointer;
     z-index: 1;
     display: none;
-
     &__line{
         display: block;
         position: relative;
@@ -63,7 +53,6 @@ span{
         width: 50px;
         border-radius: 4px;
         transition: background .8s ease;
-
         &::before, &::after{
             content: '';
             position: absolute;
@@ -81,18 +70,14 @@ span{
         }
     }
 }
-
 .menu-btn{
     display: none;
 }
-
-
 nav{
     ul{
         padding: 0;
         margin: 0;
         list-style: none;
-
         li{
             display: inline-block;
             margin: 0 1rem;
@@ -102,30 +87,24 @@ nav{
         }
     }
 }
-
 .link{
     font-family: Merriweather;
     font-style: normal;
-
     color: white;
     font-size: 1.3rem;
     font-weight: 300;
     text-decoration: none;
 }
-
 .boton{
     font-family: Merriweather;
     font-style: normal;
-
     color: black;
     font-size: 1.3rem;
     font-weight: 300;
     text-decoration: none;
-
     background-color: white;
     border: 3px solid #212121;
     border-radius: 30px;
-
     max-width: 150px;
     min-width: 100px;
 }
@@ -140,10 +119,8 @@ nav{
         height: 100vh;
         width: 100%;
         background-color: rgba($color: #333333, $alpha: 0.6);
-
         &.show{
             display: block;
-
         }
     }
     .menu-icon{
@@ -156,7 +133,6 @@ nav{
         justify-content: center;
         padding-top: 60px !important;
         width: 100%;
-        
         li{
             text-align: center;
             align-items: center;
@@ -169,14 +145,10 @@ nav{
                 width: 100%;
                 background-color: white;
             }
-        }
-        
-    }
-        
+        }   
+    }       
 }
-
 //=============================Modal login========================================
-
 .modal-content{
     border-radius: 20px;
     background-color: #0B486B;
@@ -195,7 +167,6 @@ nav{
     background-size: cover;
     border: 2px solid #FFFFFF;
     border-radius: 30px 30px 0px 0px;
-
     .close{
         color: #FFFFFF;
         padding-right: 3vh;
@@ -209,16 +180,13 @@ nav{
     right: 0;
     bottom: 0;
     margin: auto;
-
     height: 150px;
-    width: 150px;
-    
+    width: 150px;   
     background: #69D2E7;
     border: 2px solid #FFFFFF;
     border-radius: 150px;
     box-sizing: border-box;
 }
-
 .pie-modal{
     display: flex;
     flex-direction: column;
@@ -228,25 +196,20 @@ nav{
     border-radius: 0 0 30px 30px;
     align-items: center;
     .titulo-modal{
-        //text-align: center;
         padding-top: 10vh;
-
         font-family: Merriweather;
         font-style: normal;
         font-weight: normal;
         font-size: 2.5rem;
         line-height: 45px;
-
         color: #FFFFFF;
     }
-
     .form{
         &-content{
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-
         &-input{
             width: 100%;
             background: #FFFFFF;
@@ -256,21 +219,17 @@ nav{
             font-weight: 900;
             padding-left: 16px;
             padding-right: 10px;
-
             &:focus{
                 border:0; 
                 outline:none; 
             }
         }
-
         &-icon{
             position: absolute;
             right: 15px;
         }
     }
-
-    .group-icon{
-        
+    .group-icon{   
         display: flex;
         position: relative;
         min-width: 200px;
@@ -289,38 +248,16 @@ nav{
             color: #FFFFFF;
         }
     }
-    
-    .boton-login{
-        font-family: Merriweather;
-        font-style: normal;
-
-        color: rgb(255, 255, 255);
-        font-size: 2rem;
-        font-weight: 300;
-        text-decoration: none;
-
-        background-color: #79BD9A;
-        border-radius: 30px;
-        border: 0px;
-
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
     .registro{
         text-align: center;
         margin-top: 3vh;
     }
-
     .record{
         background-color: transparent;
         border: 0;
     }
-    
 }
 //========================= modal registro ==================================
-
-
 .cabecera-record{
     width: 100%;
     height: 169px;
@@ -391,9 +328,6 @@ nav{
             font-family: Merriweather;
             font-weight: bolder ;
             font-size: 1.8rem;
-
-            
-
             -webkit-text-stroke: .05rem black;
             color: #FFFFFF;
         }
@@ -404,190 +338,18 @@ nav{
     border-radius: 0 0 30px 30px;
     text-align: center;
     .informacion-personal{
-        .titulo-personal{
-            padding-top: 2vh;
-
-            font-family: Merriweather;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 2.5rem;
-            line-height: 45px;
-
-            color: #FFFFFF;
-        }
         .columna-nombre{
             text-align: left;
-            .nombre-personal{
-                padding-left: 5%;
-
-                font-family: Merriweather;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 1.5rem;
-                line-height: 45px;
-    
-                color: #FFFFFF;
-            }
         }
-        .columna-input{
-            text-align: left;
-            padding-left: 5%;
-            padding-right: 5%;
-            .input-nombre{
-                width: 100%;
-                background: #FFFFFF;
-                border: 5px solid #3B8686;
-                border-radius: 30px;
-                font-family: "Font Awesome 5 Free"; 
-                font-weight: 900;
-                margin-bottom: 20px;
-                padding-left: 16px;
-                padding-right: 10px;
-    
-                &:focus{
-                    border:0; 
-                    outline:none; 
-                }
-            }
-            .nombre-personal{
-                padding-left: 5%;
-
-                font-family: Merriweather;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 1.5rem;
-                line-height: 45px;
-    
-                color: #FFFFFF;
-            }
-        }
-        
     }
-
     .informacion-escolar{
-        .titulo-personal{
-            padding-top: 2vh;
-
-            font-family: Merriweather;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 2.5rem;
-            line-height: 45px;
-
-            color: #FFFFFF;
-        }
-        .columna-input{
-            text-align: left;
-            padding-left: 5%;
-            padding-right: 5%;
-            .input-nombre{
-                width: 100%;
-                background: #FFFFFF;
-                border: 5px solid #3B8686;
-                border-radius: 30px;
-                font-family: "Font Awesome 5 Free"; 
-                font-weight: 900;
-                margin-bottom: 20px;
-                padding-left: 16px;
-                padding-right: 10px;
-    
-                &:focus{
-                    border:0; 
-                    outline:none; 
-                }
-            }
             .selector{
                 padding-top: 5px;
                 padding-bottom: 5px;
             }
-            .nombre-personal{
-                padding-left: 5%;
-
-                font-family: Merriweather;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 1.5rem;
-                line-height: 45px;
-    
-                color: #FFFFFF;
-            }
-        }
     }
-
-    .Informacion-correo{
-        .titulo-personal{
-            padding-top: 2vh;
-
-            font-family: Merriweather;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 2.5rem;
-            line-height: 45px;
-
-            color: #FFFFFF;
-        }
-        .columna-input{
-            text-align: left;
-            padding-left: 5%;
-            padding-right: 5%;
-            .nombre-personal{
-                padding-left: 5%;
-
-                font-family: Merriweather;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 1.5rem;
-                line-height: 45px;
-    
-                color: #FFFFFF;
-            }
-            .input-nombre{
-                width: 100%;
-                background: #FFFFFF;
-                border: 5px solid #3B8686;
-                border-radius: 30px;
-                font-family: "Font Awesome 5 Free"; 
-                font-weight: 900;
-                margin-bottom: 20px;
-                padding-left: 16px;
-                padding-right: 10px;
-    
-                &:focus{
-                    border:0; 
-                    outline:none; 
-                }
-            }
-        }
-    }
-
     .carta-compromiso{
         text-align: justify;
-        .titulo-personal{
-            text-align: center;
-            padding-top: 2vh;
-            margin-bottom: 2vh;
-
-            font-family: Merriweather;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 2.5rem;
-            line-height: 45px;
-
-            color: #FFFFFF;
-        }
-        .nombre-personal{
-            margin-left: 5%;
-            margin-right: 5%;
-            margin-bottom: 2vh;
-
-            font-family: Merriweather;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 1.5rem;
-            line-height: 45px;
-
-            color: #FFFFFF;
-        }
     }
     .seccion-botones{
         margin-bottom: 6vh;
@@ -604,43 +366,65 @@ nav{
                     border: 0;
                 }
             }
-            .boton-login{
-                font-family: Merriweather;
-                font-style: normal;
-
-                color: rgb(255, 255, 255);
-                font-size: 2rem;
-                font-weight: 300;
-                text-decoration: none;
-                min-width: 200px;
-
-                background-color: #79BD9A;
-                border-radius: 30px;
-                border: 0px;
- 
-            }
         }
         .columna-derecha{
             margin-top: 2vh;
-            .boton-login{
-                font-family: Merriweather;
-                font-style: normal;
-
-                color: rgb(255, 255, 255);
-                font-size: 2rem;
-                font-weight: 300;
-                text-decoration: none;
-
-                background-color: #79BD9A;
-                border-radius: 30px;
-                border: 0px;
-
-            }
         }
     }
 }
-
 .boton-login{
     min-width: 200px;
+    font-family: Merriweather;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 300;
+    text-decoration: none;
+    min-width: 200px;
+    background-color: #79BD9A;
+    border-radius: 30px;
+    border: 0px;
 
+}
+.titulo-personal{
+    text-align: center;
+    padding-top: 2vh;
+    margin-bottom: 2vh;
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+.input-nombre{
+    width: 100%;
+    background: #FFFFFF;
+    border: 5px solid #3B8686;
+    border-radius: 30px;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    margin-bottom: 20px;
+    padding-left: 16px;
+    padding-right: 10px;
+    &:focus{
+        border:0; 
+        outline:none; 
+    }
+}
+.nombre-personal{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2vh;
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+.columna-input{
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
 }

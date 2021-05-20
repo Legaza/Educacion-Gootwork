@@ -44,14 +44,14 @@
       <form action="#" class="form-content">
 
         <div class="group-icon">
-          <input type="text" class="form-input" placeholder="&nbsp; &nbsp; Username ">
+          <input type="text" class="form-input" placeholder="&nbsp; &nbsp; Username " required>
           <span class="form-icon">
             <i class="far fa-user"></i>
           </span>
         </div>
 
         <div class="group-icon">
-          <input type="password" class="form-input" placeholder="&nbsp; &nbsp; Password ">
+          <input type="password" class="form-input" placeholder="&nbsp; &nbsp; Password " required>
           <span class="form-icon">
             <i class="fas fa-lock"></i>
           </span>
@@ -85,7 +85,7 @@
   <div class="modal-body">
 
     <div class="cabecera-record">
-      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')" (click)="reinicio()">
           <span aria-hidden="true">&times;</span>
       </button>
 
@@ -150,21 +150,21 @@
 
           <div class="row">
             <div class="col-12 col-md-6 columna-input">
-              <input type="text" class="input-nombre" placeholder="&nbsp; &nbsp; Nombres ">
+              <input type="text" class="input-nombre" placeholder="&nbsp; &nbsp; Nombres " required>
             </div>
             <div class="col-12 col-md-6 columna-input">
-              <input type="text" class="input-nombre" placeholder="&nbsp; &nbsp; Apellidos ">
+              <input type="text" class="input-nombre" placeholder="&nbsp; &nbsp; Apellidos " required>
             </div>
           </div>
 
           <div class="row">
             <div class="col-12 col-md-6 columna-input">
               <p class="nombre-personal">DNI </p>
-              <input type="text" class="input-nombre" placeholder="&nbsp; &nbsp; DNI ">
+              <input type="text" class="input-nombre" placeholder="&nbsp; &nbsp; DNI " required>
             </div>
             <div class="col-12 col-md-6 columna-input">
               <p class="nombre-personal">Nacimiento </p>
-              <input type="date" class="input-nombre" placeholder="&nbsp; &nbsp; " min="1950-01-01">
+              <input type="date" class="input-nombre" placeholder="&nbsp; &nbsp; " min="1950-01-01" required>
             </div>
           </div>
 
@@ -176,11 +176,11 @@
           <div class="row">
             <div class="col-12 col-md-6 columna-input">
               <p class="nombre-personal">Institucion educativa </p>
-              <input type="text" class="input-nombre" placeholder="&nbsp; &nbsp; Institucion educativa">
+              <input type="text" class="input-nombre" placeholder="&nbsp; &nbsp; Institucion educativa" required>
             </div>
             <div class="col-12 col-md-6 columna-input">
               <p class="nombre-personal">Nombre de institucion </p>
-              <input type="text" class="input-nombre" placeholder="&nbsp; &nbsp; Nombre de la institucion">
+              <input type="text" class="input-nombre" placeholder="&nbsp; &nbsp; Nombre de la institucion" required>
             </div>
           </div>
 
@@ -213,22 +213,22 @@
           <div class="row">
             <div class="col-12 col-md-6 columna-input">
               <p class="nombre-personal">E-mail </p>
-              <input type="text" class="input-nombre" placeholder="&nbsp; &nbsp; E-mail">
+              <input type="text" class="input-nombre" placeholder="&nbsp; &nbsp; E-mail" required>
             </div>
             <div class="col-12 col-md-6 columna-input">
               <p class="nombre-personal">Telefono celular </p>
-              <input type="text" class="input-nombre" placeholder="&nbsp; &nbsp; Telefono celular">
+              <input type="text" class="input-nombre" placeholder="&nbsp; &nbsp; Telefono celular" required>
             </div>
           </div>
 
           <div class="row">
             <div class="col-12 col-md-6 columna-input">
               <p class="nombre-personal">Contraseña </p>
-              <input type="text" class="input-nombre" placeholder="&nbsp; &nbsp; contraseña">
+              <input type="text" class="input-nombre" placeholder="&nbsp; &nbsp; contraseña" required>
             </div>
             <div class="col-12 col-md-6 columna-input">
               <p class="nombre-personal">Confirma contraseña </p>
-              <input type="text" class="input-nombre" placeholder="&nbsp; &nbsp; confirma contraseña">
+              <input type="text" class="input-nombre" placeholder="&nbsp; &nbsp; confirma contraseña" required>
             </div>
           </div>
 
