@@ -1,37 +1,53 @@
 <div class="contenedor-dashboard">
     <!--Inicio sidebar-->
-    <div class="sidebar-dashboard">
-        <div class="decorador">
-            <div class="circulo-grande">
+    <div class="sidebar-dashboard"  [ngClass]="{'show': estadoBarra==true}">
 
-            </div>
-            <div class="circulo-pequeño">
-
-            </div>
-        </div>
-        <div>
+        <div class="contenedor-decorador">
+            <div class="decorador"></div>
+            <div class="circulo-grande"></div>
+            <div class="circulo-pequeño"></div>
             <div class="logo"></div>
             <p class="nombre-logo">Sumaq<br>Yachay</p>
-
             <input type="checkbox" class="menu-btn" id="menu-btn">
-            <label for="menu-btn" class="menu-icon">
+            <label for="menu-btn" class="menu-icon" (click)="Transformacion()">
                 <i class="fas fa-bars"></i> 
             </label>
+            
         </div>
 
+        
+
         <div class="contenedor-botones">
-            <button class="boton-slider activo"><i class="fas fa-home"></i>&nbsp;&nbsp;Inicio</button>
-            <button class="boton-slider"><i class="far fa-sticky-note"></i>&nbsp;&nbsp;Acerca de...</button>
-            <button class="boton-slider"><i class="far fa-question-circle"></i>&nbsp;&nbsp;Ayuda</button>
-            <button class="boton-slider"><i class="fas fa-cog"></i>&nbsp;&nbsp;Configuracion</button>
+            <button class="boton-slider" (click)="estado='primero'" [ngClass]="{'activo': estado=='primero'}"><i class="fas fa-home"></i>&nbsp;&nbsp;Inicio</button>
+            <button class="boton-slider" (click)="estado='segundo'" [ngClass]="{'activo': estado=='segundo'}"><i class="far fa-sticky-note"></i>&nbsp;&nbsp;Acerca de...</button>
+            <button class="boton-slider" (click)="estado='tercero'" [ngClass]="{'activo': estado=='tercero'}"><i class="far fa-question-circle"></i>&nbsp;&nbsp;Ayuda</button>
+            <button class="boton-slider" (click)="estado='cuarto'" [ngClass]="{'activo': estado=='cuarto'}"><i class="fas fa-cog"></i>&nbsp;&nbsp;Configuracion</button>
         </div>
     </div>
 
+    <div class="sidedbar-mini" [ngClass]="{'showMini': estadoBarra == true}">
+        <div class="mini-botones">
+            
+            <div class="contenedor-barra">
+                <input type="checkbox" class="menu-btn-mini" id="menu-btn-mini">
+                <label for="menu-btn-mini" class="menu-icon-mini" (click)="Transformacion()">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+
+            <div class="contenedor-mini-botones">
+                <button class="boton-slider-mini" (click)="estado='primero'" [ngClass]="{'activo-mini': estado=='primero'}"><i class="fas fa-home"></i></button>
+                <button class="boton-slider-mini" (click)="estado='segundo'" [ngClass]="{'activo-mini': estado=='segundo'}"><i class="far fa-sticky-note"></i></button>
+                <button class="boton-slider-mini" (click)="estado='tercero'" [ngClass]="{'activo-mini': estado=='tercero'}"><i class="far fa-question-circle"></i></button>
+                <button class="boton-slider-mini" (click)="estado='cuarto'" [ngClass]="{'activo-mini': estado=='cuarto'}"><i class="fas fa-cog"></i></button>
+            </div>
+        </div>
+    </div>
     <!--Inicio header-->
     <header class="header-dashboard">
-        <div class="line"></div>
+        <!-- <div class="line"></div> -->
         <button class="boton-noti"><i class="far fa-bell"></i></button>
-        <div class="line"></div>
+        <!-- <div class="line"></div> -->
         <div class="usuario">
             <div>
                 <p class="type-text name">Javier Coronel</p> 
